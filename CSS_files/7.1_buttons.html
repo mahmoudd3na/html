@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button</title>
+    <style>
+        body{ 
+            background:rgb(69, 69, 98);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+      /* the basic button  */
+      .btn {
+        color: aliceblue;
+        padding: 16px;
+        
+      }
+      /* the register button  */
+      .reg_btn {
+        font-size: 20px;       
+      }
+      /* the submit button  */
+      .sub_btn {
+        font-size: 15px;
+      }
+
+      .container {
+        width: 200px;
+        margin: auto;
+      }
+      .no_border {
+        border: none;
+      }
+      
+      .flat {
+        border-radius: 0;
+        
+      }
+      .round {
+        border-radius: 10px;
+      }
+      .ghost {
+        background-color: transparent;
+        border: 1px  solid red;
+      }
+      .ghost:hover {
+        background: red;
+        border: 1px  solid ;
+      } 
+      .blue{ 
+        background: rgb(49, 105, 194);
+        border: rgb(49, 105, 194);
+      }
+      .blue:hover{ 
+        background: rgb(41, 89, 165);;
+      }
+      .red { 
+        background: rgb(130, 43, 43);
+        border: rgb(130, 43, 43);
+      }
+      .red:hover{
+        background: rgb(129, 28, 28);;
+      }
+      .green { 
+        background: green;
+        border: green;
+      }
+      .green:hover{
+        background: rgb(2, 117, 2); 
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Flat</h1>
+      <button class="btn reg_btn flat blue no_border">Register</button>
+      <button class="btn sub_btn flat green no_border">Submit</button>
+      <br />
+      <h1>Round</h1>
+      <button class="btn reg_btn round no_border red ">Register</button>
+      <button class="btn sub_btn round no_border blue">Submit</button>
+      <br />
+      <h1>Flat Ghost</h1>
+      <button class="btn reg_btn flat ghost ">Register</button>
+      <button class="btn sub_btn flat ghost   ">Submit</button>
+      <br />
+      <h1>Round Ghost</h1>
+      <button class="btn reg_btn round ghost" >Register</button>
+      <button class="btn sub_btn round ghost red:hover ">Submit</button>
+    </div>
+  </body>
+</html>
