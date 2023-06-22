@@ -7,20 +7,12 @@
     <!-- we should have used the position relative on the outer box 
     cause the absolute box should have a parent relative box -->
     <style>
-      /* *{
-        font-size: 20px;
-      } */
       #outer {
         width: 100px;
         height: 100px;
         background: darkcyan;
         margin: 50px;
         position: relative;
-
-      }
-      #outer h4{
-        display: block;
-        
       }
       #inner {
         width: 50px;
@@ -29,17 +21,11 @@
         position: absolute;
         top: 10px;
       }
-      #title_box{
-        position: relative;
-      }
     </style>
   </head>
   <body>
     <div id="outer">
-      <div id="title_box"> box title
-        <div id="inner"></div>
-      </div>
-      
+      <div id="inner"></div>
     </div>
   </body>
 </html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <style>
+      .coolborder {
+        position: relative;
+        width: 250px;
+        height: 41px;
+        padding: 7px;
+        margin: 25px;
+        background: lightgray;
+        border: none;
+        text-align: center;
+      }
+      .coolborder::before,
+      .coolborder::after {
+        position: absolute;
+        width: 33px;
+        height: 20px;
+        content: "";
+      }
+      .coolborder::after {
+        right: 0;
+        bottom: 0;
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+      }
+      .coolborder::after {
+        right: 0;
+        top: 0;
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="coolborder">
+      <h2>cool border</h2>
+    </div>
+  </body>
+</html>

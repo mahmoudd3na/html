@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positining</title>
+    <style>
+        .box{
+            border: 2px solid black ;
+            position:absolute;
+            background: white;
+        }
+        #box1 { 
+          width:100px; 
+          height:100px; 
+          top:20px ; 
+          left:20px;
+          z-index: 1;
+        }
+        #box2{
+            width: 80px; 
+            height:200px;
+            top:70px; 
+            left:70px;
+            z-index: 2;
+        }
+        #box3{ 
+            width:300px; 
+            height :70px;
+            top:200px;
+            left:20px;
+            z-index: 3;
+        }
+        #box4{ 
+            width:60px; 
+            height:300px;
+            top:20px; 
+            left:300px;
+            z-index: 4; 
+            
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box" id="box1">div one</div>
+    <div class="box" id="box2">div two</div>
+    <div class="box" id="box3">div three</div>
+    <div class="box" id="box4">div four</div>
+    
+</body>
+</html>
