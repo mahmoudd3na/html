@@ -22,5 +22,4 @@ const withBob = people.concat("Bob");
 
 
 
-
 console.log(withBob);
