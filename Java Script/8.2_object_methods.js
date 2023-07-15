@@ -16,4 +16,5 @@ myCountry.chechIsland=function(){
     else return false; 
 }
 
-console.log(myCountry.chechIsland)
+console.log(myCountry.chechIsland);
+    
